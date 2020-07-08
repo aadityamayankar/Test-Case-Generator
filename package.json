@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "startn": "nodemon ./bin/www"
+    "startn": "nodemon ./bin/www",
+    "dev":"concurrently \"npm run startn\" \"cd ../testcase-front && yarn start\"",
+    "build": "cd testcase-front && npm run build",
+    "install-depend": "cd testcase-front && npm install",
+    "heroku-postbuild": "npm run build && npm run install-depend"
   },
   "dependencies": {
+    "concurrently": "^5.2.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",

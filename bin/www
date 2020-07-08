@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+const express = require('express');
 var app = require('../app');
 var debug = require('debug')('testcase-back:server');
 var http = require('http');
@@ -24,6 +24,10 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
+
+if(process.en.NODE_ENV==='production'){
+  app.use(express.static('testcase-front/build'))
+}
 
 server.listen(port);
 server.on('error', onError);
