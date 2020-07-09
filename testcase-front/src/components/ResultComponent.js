@@ -29,7 +29,7 @@ class Result extends Component{
             redirect: 'follow'
         };
     
-        fetch("http://localhost:5000/ds", requestOptions)
+        fetch(`http://localhost:${process.env.PORT}/ds`, requestOptions)
             .then(response => response.json())
             .then(result => {console.log(result);this.setState({string:result.answer})})
             .catch(error => {console.log('error', error);this.setState({string:"ERROR"})});
