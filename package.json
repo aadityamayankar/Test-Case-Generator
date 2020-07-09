@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "startn": "nodemon ./bin/www",
-    "dev":"concurrently \"npm run startn\" \"cd ../testcase-front && yarn start\"",
+    "dev":"concurrently \"npm run startn\" \"cd ../testcase-front && npm start\"",
     "build": "cd testcase-front && npm run build",
     "install-depend": "cd testcase-front && npm install",
     "heroku-postbuild": "npm run install-depend && npm run build"
