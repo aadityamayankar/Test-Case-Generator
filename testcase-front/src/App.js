@@ -5,7 +5,9 @@ import NavbarComponent from './components/NavbarComponent'
 import {ConfigureStore} from './redux/configureStore';
 import { createMuiTheme,ThemeProvider } from "@material-ui/core/styles";
 const store = ConfigureStore();
-
+require('react-dom');
+window.React2 = require('react');
+console.log(window.React1 === window.React2);
 export default class App extends Component{
     
     constructor(props){
