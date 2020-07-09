@@ -7,7 +7,7 @@
     "startn": "nodemon ./bin/www",
     "dev":"concurrently \"npm run startn\" \"cd ../testcase-front && yarn start\"",
     "build": "cd testcase-front && npm run build",
-    "install-depend": "cd testcase-front && yarn install",
+    "install-depend": "cd testcase-front && npm install",
     "heroku-postbuild": "npm run install-depend && npm run build"
   },
   "dependencies": {
