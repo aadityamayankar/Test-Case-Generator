@@ -27,7 +27,7 @@ git clone https://github.com/aadityamayankar/Test-Case-Generator.git
 
 2. cd into `Test-Case-Generator`
 
-3. Install node dependencies
+3. Install package dependencies
 
 ```
 npm install
@@ -323,7 +323,7 @@ const randuuggen=(nodes,edges)=>{
 ## Built With
 
 * [React](https://reactjs.org/) - Framework used for making the front end.
-* [React-hook-form](https://https://react-hook-form.com/) - Used for making and validating forms.
+* [React-hook-form](https://react-hook-form.com/) - Used for making and validating forms.
 * [Material UI](https://material-ui.com/) - Used for making the UI/UX.
 * [Express](https://expressjs.com/) - Framework used for making the back end.
 
